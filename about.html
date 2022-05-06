@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id = "n" style="position: fixed;">
+        <div class="deskNav">
+            <div class="navText">
+                <h1 class="logo">Hello Car Maintainer</h1>
+                <ul>
+                    <li><a href="contact.html">Contact_Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="about.html">About_us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobileNav" id = "mNav"> 
+            <h1 class="logo">Hello Car Maintainer</h1>
+            <a href="index.html" onclick="myFunction()">Home</a>
+            <a href="about.html" onclick="myFunction()">About</a>
+            <a href="service.html" onclick="myFunction()">Services</a>
+            <a href="contact.html" onclick="myFunction()">Contact Us</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+    <header>
+        <div class="mySlides raceCar fade">
+            <div class="textAd">
+                <h2>Excellent Car Repair</h2>
+            </div>
+        </div>
+        <div class="mySlides engine fade">
+            <div class="textAd">
+                <h2>Superb Car Service</h2>
+            </div>
+        </div>
+        <div class="mySlides know fade">
+            <div class="textAd">
+                <h2>Expert Car Knowledge</h2>
+            </div>
+        </div>
+        <div class="mySlides guest fade">
+            <div class="textAd">
+                <h2>Great Guest Service</h2>
+            </div>
+        </div>
+    </header> <br><br><br>
+    <hr style="height:5px;border-width:0;color:gray;background-color:gray">
+    <main>
+        <!--***************************** About us *****************************-->
+        <div id ="ab" class="about sec">
+            <div class="heading">
+                <h3><span class="red">About_us</span></h3>
+                <p>
+                    We specialize in transmission and engine computer diagnostics
+                    and repair. We also specialize in A/C service, brakes, suspension,
+                    engine cooling systems, and much more, including all of your vehicle
+                    maintenance services.
+                </p>
+            </div>
+            <div class="content">
+                <div id = "aPic" class="aContentBox">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFhYYGRgYHBoZHRoYHBwaHRwcGhgaGhoZHCEcIy4lHB4rIRkYJjgmKy80NTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjQkJCs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0MTQ0NDQ0NP/AABEIALEBHQMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAgMEBgcAAf/EAEUQAAIBAgQDBgMECAQFAwUAAAECEQADBBIhMQVBYQYTIlFxgTKRoUJSscEHFCNicoLR4RU0svAzkrPC8VODoiQ1Q2N0/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAIREBAQEBAAMBAAMBAQEAAAAAAAERAgMhMRJBUWEEIkL/2gAMAwEAAhEDEQA/AKQzljJMnrWkdjPHg0Gvgdx6AkP/AN1ZoKu36OuIRcbDsdHl1/iVfEPWAD/LS753lpx1nQrjbYzkdabVKl4tDmOkCd6aC1wdeq9KX0Sbe1PWxyrkWa4mDSCNjE5ii+AxRdAT8Q0Ptsf9+VQMQJXSmOHYoIXnYgH3kD8zV+O+8ZeXnedH81dNM27ysJBpWat3KdDUkXNaTNMO2tAEw4pjFWFcRzptXpYegT0CX8OUMGmKPX1DiDQPE2yhg1FjfjvXYe+UYMOVWixi86hl+VVENRbgPEu6aMuYNAHnPSlzco752akdo77LaVNQ1xtug/vFSsImRFTyA+fOg/HOId5jBpK2oEemp+pj2oxZuK6lwwEbg1d+4xnN/OnM1LFC73EkTdqgXe0w2QTTGLMDG9QcfxZEG8mqte4xeuaAH21pocMuN4mMT5mgST+UzEcVe5I5UzhkZdSpoZcY23idqI4fjDDQwaJP7Vf8EDiR5RTWKuqUOsU9hsZbf44UedK4p+o5IW74uhn8BFViNyq+9scmpsYgqdCajXGUHwtIpJYEb1GNNE7XFnXVXb5mi2F7XuNHVXHUVVEXz2pAfWOU1UtTZKvtvjGEufGhQ+aafhUxLeGf4biHo4g/PeheA4GhQPEyJmgONw5DGCQAav2jJfi23uBWz8IP8jq30aht7s+J/wCI46G23/bpVTdnUyGIPmDFLHHsSui3Xj1n8aNgy/2ri1L4XizavW7g+w6seonxD3WR71EWva3xlrZcfZG4MiJHUHY0KyU92cxPfYO25MsgNtv5Phn+UrSnWvP8nOV3eLrYj7V66SK9K60tD8qybGEMiKF420crgb5GiPSR+FE7oymaYvxnBjQ6H0O9Pi5R1N5qs8K40yEAk1c8DjlcSDrWZ4m2Ud0O6sV+R3onwjiJRgJ0rrscDRM1MXG1pOGxAdQRSbp1qTSg1eF6aDV6iljCgk+QE0A4HpN20HGU7nSiuD4C7auQg+Z+VSscuFwqFndQ0aZ2GZuir/QU5zS/UnxReI4drLZTBnUV5wjFDvVJE5ZaNOQJG/WKA4/iL3XZy0DWB5DkKcwDlLVy4TqwyL/N8Ue1Kc+2t79JNrHAF3Y+JjPzMn6mkW773XypMnyoOiMx51b+y3Zq8/7RX7uOcSac52pveTC8N2Wf4rrqg9ZP9KNWOzSIuZbb3OpjX2mpOK7HZ1LXcRdcgTqQFEdAIoFgv0gOngdFdV0DA5SQNAdiPwq8kZfq34a4rj3TwJaVZ21k/IVHTgnELq5shCnUSyr9JmrtwvC4bF21xCooJnTQkEGDMc6fvYzI6YdXIYgkZtoXfWNfSiwfr+ma3eAYhdWQ9Y1pd3hbrbzhDV74xjbSLkbEIrc9VLfLlVZx3aOwAEDtcUdCJ+lH5ip1aq9+y40O/lUe5acCSpjz5VaXwr3ytwWGRSNCxiRygbxTXGTfKLb7nReYgk1OH+lXVSTABrrgKmDUq87JAIysddRUG7cLGWmaWHp+xicp8x5VJzI4J+Eih62iQSCNKkcKxSW7ma4udIII9edOFan4btBeS2bat4TtO49KGfrT5pk0zdvgsSogSSB5Ca8F6mBD9YV/XypCpULvq8700BAFLFJFegmurHPq9/o1xfivWCfiUXFHVTlb5hl/5aO4sFTWe9muJdzibVwmFzZW/hfwtPpM+1adxO3lfbQ1y+fn3rp8HX8B6ma9ArxTrFL+VcfUdcR8TbkVCdtI5iiTqIoXe0PrSi4q3aa1F0P99QfdfCfoF+dDEaj3aS3KIw+yxB/mEj/TQTA4R7jKiIzu2yqJJ/t1rt498xw+SfnqrR2c4h9k1abWFe40Ipb02HqdhSuyvYDu4uYlpbfu1Og/iYbnoNOpq+qqosKoAHJRT/Ptl+v6V/A9nDobjey/1o1bsW7S6BVHmfzJoL2k7V28KuoljsoIk9Ynasq4zxzEYpyXYqnJJgR186rJC99Lr2z7QXHITC3JUA52Q8+Sgj351muJuPmJcktzJ3NWvhOJs2bEM65jyoJxDFWXb8xSsOeguySWAGpJAAqwY+y0pYSJQeLkM7b/ACpHY3BKzviH0t2FLEnm32R6x+Ndai4zOx8TsWOu0mYoxWkY3A3LShmZdeS61auwWIuoHe4z5D9gga9R1qTwDs4jrncQBrr9kdZ586rmN7QE3HSwSyKSAxmCBzAHKj4W76XXjfaVGtugt3/ECCQoG+/OazzBcAu32LWlhAYzucoHnvrV97N8UtNZL3UAcMVga5gADOvv8qq3a3Fu7hgGysZCrIXL5EedK/6U9fDmD4HeVXVMXbVQdQrkSfOAaev9m7t8JN5LjDQS5P8AWqphncyURmifhUmOkip9vir2keUdHYDKxkQQZ50KH37H2bMd/eYtuURduk6/PSnhfwdkApYUn71wgn8/yoXi+Oi4y3bmZlZB4QdM66GelV/iuKa6ZCqigaBaCnv6ub9qLT63HMjYJIA+tSLXH7DwqsxPoSay4k1aeytxbThyJ0pKG+LYe27o/NTrmUrp8qm9xYfc2j7032h7SKlk5Qpd9BIrNjdY6yaMEaJf7N2G+ERP3Wofd7JLGk/Q1UsNi3H2m+dTf8SuquYXH+Zo9g/iOy19dhNQrnBr67pTlvtTiV+2T61ITtleG+U+oFHsBF3CXF3QimNRyNW/D9uF2eyje1QOIcZsXGzC2qeYpzQrdOJrTYpQrrjmLdK1Ds3j/wBZwozGblqEfzMDwN7j6g1myKGEGi/ZTiJw2JUMfBcGR+g+y/8AKfoWqfL4/wBc+lePv89LmymvKl4+3lM8jUAmDr9K8zqfw9Pm7NPEVBxiVKBpN1JFZrgV/hhxA7kFQzkBS2wYHQmOkitG7Ndm7ODTKglyPFcI8TH8h5AVn9m6UcEaGQfQg6VqmCxIuW1cbMJ9DzHsZrr8N9Y4/wDpn/qVIJqJj8UttGdtgJ9elPO55UH4nbZ3tIfhzF2nY5dhHqQfatnMBcO7Md/cOJxfidjKp9lF+yOpojxTsthry5WQKY0ZdCKNs8DUgUMxvHsPb+O8g6ZgT8hQGZce7InDAsbkryMa+9AUtW2QIJN1jAjYyYFWntnxfv4SycykZnZdoOy0DPBbuHtriWhfIeROgJpWKlFXw4S3+rI0pb8d1gfjuH7I6L+PpUvhj2LUPlUkfeNCGvWUK20IcsoJckxnOpBq3cA7F2rttbt0hi4mE0ABoPcD+13axDZGGwzTnH7Rxpp9wevPppzqd2V7OJ+rhn0L6+1Tr36O8NMqzr0mfxFO8etvhbIdLoIQRlYCTy5b0YWm7HD7ZupYE5CxJK7g5dBPLWhnae/ZsB0GbPbYSG1Dowmele9gOMM90m4RNyRPUeIfgRSu3vByyXsR/uBAmlcEvtUcT2wukZLapbQckUVEvcVuXUYP4gCIPlQINUvL4J1HTzpKTUfwFDMbj3oeHI51JXFg2wkAFSTPM9DXmNwagqUOjKGOux5ig9eYVGdgiyT0E6Dc0u/fcGFJCjQdYq8dn+DJYw9vEg/tLltySdtRIH4VS+LcQz2rSAAZcxMeZNBaj4zEFlUEzFREeK9tW2chRzO/IetErNgW3yKguuBGmoBNPD1Ea4MogQfOmjeYjLyohicC663WVP3RqflyptMCX+FDHm2lGFoY1NzRS9gQu5FeLhEOuo9dqMGhc100Zw1lUIlEcRsTB9ajYvDgtK2yo8powajqaUGptUJrzKa6tYJltqVZYi6GicgmKhB2U1OtXgzBucEGr56lT1PTQ+z/ABT9ZtFD8dv5sn2W9tj7edKY8qpfAsb3VwOp1XlyYc1PQ1d7zq6LcQ+FhI6eanqDp7Vw/wDTxnWz+Xb/AM3ez80gGl5qjB46zTwYDn9K47Hai4u3zqw9kuMqqtbcnTVY1PkQPp9aB4s6VBt3ijK6GGBBHzq+OvzdT3x++caVjuLpbts7DLEwG0Ogmstw/bvEFLoL/tG+B4HhA5ARFXrHcUW/h1bKSrgo6hSxDaAroCRvI6UCv/o9R8QhX9nZyKWVD4y3Ma7etdn2bHm2ZcrOsZxnEXdbl529WMfIaVAL1t139H2AywLbAxvnYn11MVSe0H6O7iS+GbvF+4YDj05N9KMOUB7P99edMNaA8bSfOAJYk+QFTO1WKdLj4dXc2kYAB4klRrtymag/qGLwjLdSUaD4kMssiCrDcH2qDjcUXdS0kwJ5k+ZM7mkFgx3EMNctogshGgSykETzqz9n+MP3C5HyshyRAgqPhkHn1qg4pkyIUGUj615wzHFHidGooxqt3iN9kOe8FXmVUKfnrFU3tVfVEgOXZvtMxYjprtTnFOKFFVEAbMiOWeTJZZhRMQNtZ1BoKuNdCt4ohUMYJtoAWiJOVffegSC/BOHX+7RkQqFhs7eEaGdJot2n7QlsI9oiC6gA9J/tQfCPicZcRc+bMfDmORNBOg2MRyBNQ+22FuWnt2rjo0KBmQkjfUGdjSoipIZIqxcQv/s0RwF00AGp6momAxL4V8wCEN94BgR+Ve3uLG4/iRWJOgHKeQpm6yEFh5Q5wRDzyPKKjWcFduBcgLScoApWKeJQoVO5FSeD8efDHwqp8g3I+YqbsA72i42y2rWGVShsoEaTqSVAMfL61X1wLXLfeZQEtgKxG5J86jY/Hm87O+rMZNE+BcUOH1X4H3RoKtH4U5Ad7PcFfEaz3dobtzboKsONti0Vs2UFtCCWuxJ05epqPb7TFhlNtVUSVNuOfmpp/wDxZHIUOATp4vD+NVIVoa1tAfDr+82rH1mm3BqdjMGRqIMkgFSDt6VBa2w3B96eDUUYUDU6nzNR8TYJ2MVPJ86j3D1pYNDWtBdZ96bFx/szHUxTt250P4fjUY3D98DpvQZlWml51XemQ9PuqukDeuiMa68wYSKbt6UwpjSnEudKW7dPE3BJrNWTszj8jG2x8Dnc/YfYN6HQH2PKhHAyGzAjWKkMmRjA0rPyyX0rjqz2uGIUqSCOfKvbLjmNaj8J4gHQIxl1GhP2lHL1A+npS76Qcy8txzrh65y49HjqdTT11ZHz+VCcRKkUTVsyz0j+tQcRtrzrP42iVwnGupKqxAuQIBjxfZ+e3uKMdleJkX+7YmHnLPJhrHvrVUwpIIMxEGfKOf0q7YQqf2z28KmHAzd54u8zb6SBkIPUzGm9dXh79Xlw/wDVxnU6i1XKBcdvYhV/+n7kv924SCf4YNNYjiV/E4VLmBa2GcwzXCRkiQ2UAGWkc6r2G7DKX7zF3nvuTJAJVZ9fiPtArZzH73BsS6i7jMTZtoupyKNOhdtqBYvsfbxBd8HiBcKRKt+AdRBmP71ojFjOkg9NP6UxcdG8BZP4FYD6KdaLgkt+MoxXDblxkT9XdHEyqIzzrEnLMag1BtdmsQbqAKsGSWJyqir8TPPwAc59N9K19L1i2Hytbt5BmcoQpUci2XeTsCDJql9oOPtiSZJSyIGgAe6w+EuB8TbkJssyehh7UPjGLtFERVZ0tIqd4RlLGSS6eQJJAU7gDSoZ4euRZvqqXDOR1c6jmQgZZ9SD0ohw6zaYo95g0ki3YtEXGBHxF1TUNtJIHsBFOcYu2pK3nxGmyd5lkcvAg8A6kSeQNLD0D7sW72QOCYIzQ68hBUBSRvp+VGcfYTF4ZiHU4i2uZwA3iAOjAkCZFBnwgul3UBYOomEHlkdoG0eEkEfhNwfEXtoLa2wXMqpQopIIjUKCW6nTqag1ONp9JB6f2p5Lcascv41oXFez1zEYVMiKL6EjQgB1nTUmquexeKVh3lp8s6lBn0iZ8M1ULUXAWhcuAi4CTvm0gDmSaY45hCjkDxAcxqB8q9xXCbiEnu3UAZtVYFRMeKRoelMLfvJqpYBjvyJ96MGoiI0yKewWEe9cW2nxMeewHNj0FWztFeS3hcKWtIMRcQXGuKoUhXnIvrlgmgPZ7EsHePidHUHyJ/Cp8lvPNsPifqyHLvDIJWxd7xkMMIy+4J5VCbiDqcrgGNCGAqb3X6vhnD/8S6R4Z1CLqSfU0OsAXQVOjgEroSXj7OnP+lT4urZfe/6vuSZ6xPwvFVWCrMh5ZTI+RoqnEndg7MlyOuRvpod5qmupGhr1LhGxrVmutxpQeMI+eIddAn3iw0qBxbC37Sq5KMj/AAuhzKenrQfDcQfRdWnlv9KnpxTwG0whSwcrEeIAiem9Mgq5dY7k0mKLOUKrll2g5s+WJnw5CBI05GobXFXQqR7T+dTYcqMKesHWmJpYOhrolZUh2kn1rykA0oUlD/Zq3mcjpR0YRS3jO3KqvwjiPckt0ivMVxl3Oh3qO/oi48KwKPibS5oWS+hg+EaCaLPfR3uIhBKMVI9yAw6GDr0NUKzi2TJB8W80xd4i9nEl0+x4SDsygAMp6GPmAeVR3xOuWnj7vPS/YYasD/ua9xOFkHl/4pGExaXUW6klWG3MEbqeoNP55H11rj6mPR5633AgYY+25PSKL8NxaL4LoLrEZSZQDkMux9/pUDGXY0nXWai2XzHXfSlzs9jqTqZVswHGbFkMtqyVUmSATqdp1OlFsHxdLoJUFY3zaD3IIqkT6U7bGon61rPJWN8HN+LFxXi/iyZEYxuZIg8t9aBM4DQVC5uSkxPSZI+fypviSAKHViWX6jnSLqsygjfeaz66vTbjx88xG4rw9sgCAZFLOURQC7k6v+++w12A0navcIljCxdxRDXgPBYTXu/LMNg23xGeep2KYHEK8qdI8/Soi9mbV3EjOxUODtGrjUb8zrPn6mtfH5P/AJrl83iz/wBQHu498TiM9qyEc+EG0s3COeZ4kHXUiIHnRkdh73d5me0j/ELbS0jnnddQeoBXpRh+A3MPraAKjmnxabTzpjEXLWIyLi7K3ck5WMh1neCIPIadK6McuqRi8djsD+yuLbKA7tatXEJaDlzlfigjwkgxGkRXYftq6nxYbC+qI9o/NHA+laSOMcPwlnICiI0k2wpZmJ3JUAlpjc6ab1lfaziGCuNOGwzWjOrZgA3/ALayq+oPtQBzC9uEBk27o6JeVhH89ufrVuwXau1fyLh7tq2/21xauW8/CVdUPPnWKCPOiF4C3CEZmjxhiYUnUIIjxAQT1MfZMmjG29oOPNaRWtW/1nXxqh2WNWUCc2saQfWoPB+0mExc2lUq+zWbiqJjeBMNHOKyfB8cu2Qe6dwv3G8a/wC/YUVwXH0a4t7E5jdRsyXAFCAR8BCgNGu8kjSIoGL32w7NJiUBX47awqmFEaCJ6AQNh6VS+CcKyOyqzI5OUh4VREk5i2gEa0QT9Iji43e2i6ZmyPbYK6qdgdMj/JaJ3sVg8emRbgc/+m47u4PRdM38pK1PXM6mVXPV5uxQePYwOcoZXAaM6jcdDQ1PCysjEMIII896tmP7KMh8DSPusCD8419wB1oHcwRUgOhWftfZgbmRofalzxOZkHXd6u0PuqzmSJJ103+VNpbQEFpInVRpOuonlS1xzicpAB28KyBPmRI+dO4bEIzDvc2WApKgFsoMwJ0nSBO1UEjDXnK3HtoqosKxG6hycqg78jQy7eJoldxQClEJRHgsCAJyklQcszEnXSY2G1RU4ezzkIYjyIHykiaAj27pHOpdrHaa/hNRv1RhOfwjaTrrp5a86IWHw6qFZC7CZbOFB15CCY9YoCDSwdD6UilKdD6VuyMg16KQKUKhR4qSuleWkgid6k4aMpJ5VHw8u4jcnT8qXX0T4I8NXPfRfNh8hqfwqBi2l3bzJ+pq78J4bewyEXbS5XzOLm7KVQjL03qj3RvR18HKdwbjL4Y6eJG+JPPlI8mj57Vo+EQ3VBWRm+8CCp5hgdVYeVZTbvKpGZQw2IPMTrB5HrRzhnaXEIwd3LoRlglc3g2MjUkAgS24jy0x64nXufW/j8t59X40C9wJYkNJ1MmoVzhjCY2/3tXmE4z3iB1JiYg6EGJjyPsTUtOIaTWHUyurnq2bLpizhI+Kk41VVfDUhMWrTJE+VNMA3vUVrzsIwNrOsHcD6UvDEI2Q89B7cv8AflTdtsjBvKQf4TE/gD7V5xR4l11I8Qjc9BRgqLjl7t8wMDWfLpNR243nA1AVTMzvGoj3rzivH7YTUBn0hGUHUfeU8vWqVjsU1xy9xizH6dPIegrTjxbPbHvzfm/NabwjD2cC5xl+/kN1SRaUiPFBJyrJdtJkQBJoV2k7e2nBFmxB5XHIB9Qi7+59qpn6ncIJI1ABILANEaaEzty3pvDWnJLJy35jqCDv6V0z16cVu3UfE4tnJYkknUk7mo1ELiI2jL3T+YEofUbr7fKo2JwbpBYSp2dTmU+hHPoYPSmTzD3yjK4iVIIkAiQZGh05U815ZzAtO5zQxmZkNzM84BqFR3g3AkuOvf3lsKQDqCWIPM8knSJk9Ig0ANe9Cwug+0fPp0FIWy8qoRyz/AArEt/AAPH7TWlWG4VgwCinEXB9o66+eZtF/lAp+327LeEp3S8smvzNGDWZYi3ctNkuI6N911ZG/wCVgK8ZBswg8uXy/tWm4m3avoZyup5HX312NV/i3Z3BWbYdr90MwJFpFV1U7CS+tPBoVguPYq0oMm5bnL+0BYSNSA24MEaSYkaUbwfaDDXvDdBsswg5/GhnzYax/EIqoDFsFCMXZEJKjMQELGSQNQCfQ14wU7GZ5EZW/MH5k+lAXfE9i7dxM9rLB2e0ysp9VmD7ZaDXuxOMT4FFxG5owBj95W2PXUdaCYTEPZYPZd0bzGk/iCPWrxwb9JbpC4q0HH/qW4VvUqfC3sRQFV4h2exFtcxw9wLzgd4FjWSySAPWgaufsn5VvmB7X4K8QFvpryc920+UOB9Kc4n2ZwmKGZ7SEn/8i6N/zrqfeaWFrA1xbgEToSCRpBIBAJ+Z+ZpkOPKtN4v+i86nD3Af3Lh19nH5qPWqvjeAYq3lR8Jd8Igd2ocHzYsJkny5RRh6ATXs6GuNdyNbMzIpQpIr0VCjr3YXKOe9e4AnOI35VGY0T7PPaF9e/wAwQhgSu6kqcrabwYpb7H8LqMbiTam88qyuApAB0Gh030mqPiViRRRuJksVe5mRZAnTf1oPjr6sxy7UujhFtlkZtvMbjXcDn6VYuEcPu4+47gImVQ1y4BlUCYLlZ+I75VgGDEVWrdudToJAk7A9fIRWkdh7Y/VcXeChQ72raqswMpzkCdY8Y+VE9eyqv4y2bjph7I8IORFJ8zq7HzOrE7DoAK7EYyxh5RQ19wCGdnZLYMEEKo1bXmfak4DFixirbv8ACCVY+SujW2b2Dk+1M8S7K4hXItr3qE+FkZToTzBOhrL77re38+ofsJbvB3RSlxFLwHLI6g65SdQQINLwHEVRs4ur4hlys5MAbfFz3rkwTYO04uOO/up3aWQ0soYgs7wYXbbnpG5IBX8FkUpeUofiUqFeQfCwMMB93YkiDprReJT58l5W+/2jsBSS4YjSF1JPlpVXfj950yhso8xOaOQnlT2NxxxBRcRkJy+C+iBXbSF7yIzrIymRmBkyYgi+5y770c8c8jrzddf4S7k+/wDuetO4YQZ500QVMnUVYeFdn795O8VMlrfvLn7NI6E6t/KDWjGoK4ZHYu4LE6k5iCfeneIYpVyuk28oCBRzA2Gvxepmpb8Muo4TIWzfCU8auPNSNCPw5xSOI9lcSR3mUMo+wrS4G5OUCD7EnpTAcvEbdzS4Ajfe+wfXmtGMH2bxE+BgiNvn+FlP7uucH0jrRLsm+DEBEyXhzuHM5PPIxED0AHpVoZD50FoJgOxmGU5mkvuDsgb7wQk/IkjpQXjHAntuTOaTMnnPOfOrugI50q8gYQwBHWmWstZSDBBFeirfxLhiwcoBHkfyNVnE4OD4TB8m/Klh6as4lkMqxB6US/xVXXJeUMPvDegrqRuK4vpQBC9xKxaBW0mctvI0/vVdxMtLZQJ5KIHypROtehqm05EdLhUSDvy3FOpdB3ET5bfKo95YOm1JV6YHcAcMfDftvH37Lww9UeVPtFWbhvZ9iM/DOIEsNe6Ym2/uux91iqEjeVOpdZSG1BGoZTBB8wRsaYaPZ7d4vCuEx+GnycDu3MbkfYf2ij9r9IHDmEm66HyKvP8A8ZBqg8P7c30yi8qYlUmBeUF1B0OV4n5g0es8Y4NeGe7hltPzBSfkU0NBYzWlMdDSa59q0Qbr015XNUKdXBq8r2kZ8OXaWMmJk9BTDma4UpEJIAEk6ADzoDxFmtZ4Nb7rhFtti9y5cPoodR9EWsmQVsvGreThuFT/APSPm1tfzelfhfyo3EuHybZM5WyBiOQ0B+k0I/xS6qMkiJjUarqdAQRpvoZjlFWnixcJlRcxZSscoAEn2lfmKpDIWB89T19PX+lRzGl61JwwzuEcHO8lTO7FSyK38ZyiQftDevMMzXlNsksw8dvMdfJ7aljzEMFHNNNTS7Ns3e7yMBdQKgUkKWKse7KE6EgZFiZ8O1P3Mat5XQ20W4AzI6DKGIOZ1IiZK5yJMCIgSI0JFvEondujq6tmUtKkBozDKwkgwDygg+ZpF2+zKpJzDbUAEdCQJPLfzpqwxZcjHQapJ0U81E7A+XmOtSsMqIrl1LCNNYUnykc/67GkWpHD8UbTi6oQlYIzoHA9VbTqDyitAwH6QGuLkvKskbqND7E1nFvHaQgOx8LnOvqu2o9KaTUSunIjlP5U56HXtod7jTIfAAVOpQ/Cf7+kEVMwfHrDkDNkc/Yfz/dbYj1g1nuG4gx8DZiDpAPi9jB+dEMIuH8Juv4VmbaIc7RMS5I1mNT6U6mLfxns7axEv8Fz76c/4xs3rv1oIuPxWDIW8veWtg41/wDlyPRqgYftQ9p2KL+yLEi2xJyLOgDb1bOGcdsYgZQQGI1tvGvTyYUsGneHcTtXhKOCeanRh6ipTvQDifZVCc9hu6cawJyz0jVfbTpUBOOYjDkJiULDk45+hGjfjTCx3qC47DKdxU/D8Qt3RKOD02I9qZxKUBXcRhiP3h5GhWLQAaA+lWi4lQcRYB5UWDVSZj5UgA0ev8P10pr9S6UsPQq1bpbYUHpRm1w7nSLmDIowaDGwy8pHSm+9jl7UWWy5MBST5ATRLD9lbtzVkKj01owKxIPSvZI51Z8Z2ZS0Dmdp8hBqv3MEwNGDTBrxtq41421WRIrxq9FeGpodXtcFpYSkZtjAJ8ta0TiH6PLmHtPikuhxay3UQKczosOZM/EBOgGsdaz8rW5dm713EYPDOHARbYDcyzpNsqf3YWfM5qZVj/HsGLeKuInwFg6fwXFFxI/lcD2rXO3NvLbsJ91VX5FB+VULiWDzX8KpWCjNhGHWzcKJPUo9s+9aD+kL4rQ9foVqb8EVFTN0LP3DHSfF68qpWMsy7hTtmYdYMwI6Sfaru1hXknMCiswdGysNIImDIPl/Sqdj0Zb5FtRKjRemTxTO+maT61M+rqM6F7SOujIxtsRp4pz23PUgkT+4amvYR375LqLcJDm2xCEPoWyZ4VxmDEAEkggZaiLfCLnsu6tIV1IEREg7w6kg6Mukc967uXvMHRBOxygIilQJ2hVH2verIq/i1cx3SI86MmZQd9ChJUT+7EeVRMOuWQ22x51dezPZpL7M2RndMpiGyS37wiBzmZ8hRTi3Zu/nUXbGGVSCFZAEgAkklswO5J186L6Ems4spBmCRyohjndFtq9t0RlFy3L6FWPxQJ0JnyNPcb4Z3TgI63FYT4c3hb7skAty1jnQq8Hgk6jzpQUXwGTEXiLy5FZPA1lcq2yuzOBPh8yfOrZYRLeHFvFWFvYYE5cVY+NCTu4Hi9xI86zi3imUQpInQwSJB+yfMVP4fxa4qPbQhc4EmJMDkCdpnWmR/iFlM7iw5u2kgi5lgwY3HqYmKHMOY06ivBhXy5wrAAxmgwSOU7E02XPP50BYeFdrb1qFf9onX4gOh/rVswfGcNiVyhlk723j896zXuyVzculMnz2PmKNLF84h2ZWc9lijeUmPY7ioB4jiLJy3kzL97+hG9CMB2lv2oBbOvk2v1qxYbtFYujK/gJ5NqKYe2MfbufC0HyOhpb26iYvgtt/Ehy/w6j+1QG/WLP7y/P/AMUARuJTQWo9viytowympIdTqCDQDy3Y0Ir0lWqK7Uw7UFg3Z4lctJltKgP3ioLH3oXjOP4k6M7D00/CmkxbL1p5sQjiG+tBhycQcbsT661IXGWzqQJ9KbxPDeaGR5UMuKQYINAQK8baurqoPK6urqVBxacWurqlRL1tn6L/AP7cn8dz/qV5XUFVZ4t/nz//AHp/0MNVp/SH8Vn+b8RXV1FEVm38L/wGqhiv80Pf/Q1dXVE+qoRY2f0H+oUd4P8A5a76r+Brq6tJ9T/DZP0ff5G17/jQ3t58a/wD/U1dXUuvtEZWf8yP4/61CxXwv/N+NdXUodCaVa3966upk0fst/lf/cb8Khce/wCDc/iT866upkp+F2b3/CmTXV1IyDSTXV1AWvs58NFr1dXU4Sq8S+OuwG9dXUgKGmHrq6mDbU01dXUARwW1NYreurqA/9k=">
+                </div>
+                <div id = "text" class="aContentBox">
+                    <p>
+                        Our business was established on August 10th, 2002.
+                        Since then we have always striven to meet the need
+                        of our clients.
+                    </p>
+                    <p>
+                        We offer friendly and reliable services to our clients.
+                        We also keep up with the technology in today's vehicles
+                        to repair most issues.
+                    </p>
+                    <div class="aContentTopic">
+                        <h5>Car Repair</h5>
+                        <p>
+                            One of our main priorities is to fix the issue of our
+                            client's vehicle, guarenteed. We also recommend any improvements
+                            clients can have for their vehicle.
+                        </p>
+                    </div>
+                    <div class="aContentTopic">
+                        <h5>Car and Guest Service</h5>
+                        <p>
+                            Not only do we offer great service to vehicles,
+                            but we also ensure trust and reliability with our clients.
+                        </p>
+                    </div>
+                    <div class="aContentTopic">
+                        <h5>Car Knowledge</h5>
+                        <p>
+                            As vehicles improve in technology, so do we. We study and keep
+                            up to date with any updates vehicles may have.
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        
+        <hr style="height:5px;border-width:0;color:gray;background-color:gray">
+    </main>
+   
+    <!--***************************** Footer *****************************-->
+    <footer style="margin-top: 60px;">
+        <div class="content">
+            <div class="footBox">
+                <h4 class="logo">Hello Car Maintainer</h4>
+                <p>
+                    Friendly, honest, and reliable auto shop in DHA phase 8.
+                </p>
+            </div>
+            <div class="footBox">
+                <h4>News and Updates</h4>
+                <p>Coming soon.</p>
+            </div>
+            <div class="footBox">
+                <h4>Contact Us</h4>
+                <p>Address: DHA Karachi Phase VIII Zone A Zone A Phase 8 Defence Housing Authority, Karachi, 75500</p>
+                <p>Phone: +928334188324</p>
+            </div>
+        </div>
+        <p id="copyright">
+            Copyright © 2022 Hello Car Maintainer.
+            
+        </p>
+        </footer>
+        </body>
+        <script src="style.js"></script>
+        </html>
+   

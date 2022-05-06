@@ -1,0 +1,640 @@
+/* ----- Presets ----- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav, header, main, footer {
+    display: block;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.logo {
+    font-family: 'Yellowtail', cursive;
+    letter-spacing: 2px;
+}
+
+/* ----- NavBar ----- */
+
+nav {
+    color: white;
+    height: 100px;
+    padding: 1px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.navText { /* Box holding h1 and ul */
+    height: 50px;
+    margin: 25px auto 0px;
+    width: 1180px;
+}
+
+h1 {
+    display: inline;
+    float: left;
+    font-size: 32px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    float: right;
+    padding: 8px 12px;
+}
+
+li a {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #D01A1A;
+}
+
+.mobileNav {
+    display: none;
+}
+
+/* ----- Heading ----- */
+
+header {
+    clear: both;
+    height: 800px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.raceCar {
+    background: linear-gradient(rgba(20,20,20,.2),rgba(20,20,20,.2)),url(https://www.dropbox.com/s/wrlta1w35sm4ml8/corvette2.jpg?raw=1);
+}
+
+.engine {
+    background: linear-gradient(rgba(20,20,20,.2),rgba(20,20,20,.2)),url(https://www.dropbox.com/s/bvipirheommd194/car-engine-motor.jpeg?raw=1);
+}
+
+.know {
+    background: linear-gradient(rgba(20,20,20,.2),rgba(20,20,20,.2)),url(https://www.dropbox.com/s/ibndiawqe7ob5a0/know.jpeg?raw=1);
+}
+
+.guest {
+    background: linear-gradient(rgba(20,20,20,.2),rgba(20,20,20,.2)),url(https://www.dropbox.com/s/ssxgqtpfq7fs2kw/guest.jpeg?raw=1);
+}
+
+.mySlides {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+.textAd {
+    bottom: 25px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+/* ----- main ----- */
+
+.red {
+    color: #D01A1A;
+}
+
+.sec {
+    height: 800px;
+    padding: 1px 0px;
+    width: 100%;
+}
+
+.heading {
+    height: 150px;
+    margin: 100px auto 40px;
+    text-align: center;
+    width: 800px;
+}
+
+.heading h3 {
+    font-size: 56px;
+    margin-bottom: 30px;
+}
+
+.content {
+    height: 400px;
+    margin: auto;
+    width: 1180px;
+}
+
+/* ----- About ----- */
+
+.aContentBox {
+    float: left;
+    height: 380px;
+    margin: 10px 10px;
+    width: 570px;
+}
+
+.aContentBox img {
+    width: 100%;
+    height: auto;
+}
+
+h5 {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.aContentBox p {
+    margin-bottom: 15px;
+}
+
+/* ----- Services ----- */
+
+.services {
+    background-color: black;
+    color: white;
+}
+
+.sContentBox {
+    float: left;
+    height: 160px;
+    margin: 20px 45px;
+    width: 302px;
+}
+
+.sContentBox h4 {
+    font-size: 24px;
+    margin: 30px 0px 10px;
+}
+
+/* ----- Contact ----- */
+
+.contact {
+    height: 1000px;
+    padding: 1px 0px;
+    width: 100%;
+}
+
+.contentShow {
+	height: 500px;
+    margin: auto;
+	padding: 1px 0px;
+    width: 1180px;
+}
+
+.showBox {
+	float: left;
+	height: 450px;
+	margin: 25px;
+	width: 540px;
+}
+
+.showBox img {
+	width: 100%;
+	height: 100%;
+}
+
+/* ----- Footer ----- */
+footer {
+    background-color: black;
+    color: white;
+    height: 400px;
+    padding: 1px 0px;
+    width: 100%;
+}
+
+footer .content {
+    margin: 60px auto 80px;
+    height: 200px;
+}
+
+.footBox {
+    float: left;
+    height: 190px;
+    margin: 5px 5px;
+    width: 380px;
+}
+
+.footBox h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footBox p {
+    color: #999;
+    margin-bottom: 10px;
+}
+
+#copyright {
+    text-align: center;
+}
+
+#copyright a {
+    text-decoration: none;
+    color: #089EF5;
+}
+
+@media screen and (max-width: 1200px) {
+    /* ----- NavBar ----- */
+    .navText {
+        width: 980px;
+    }
+
+    /* ----- main ----- */
+    .content {
+        width: 980px;
+    }
+
+    /* ----- About ----- */
+    .aContentBox {
+        width: 470px;
+    }
+
+    /* ----- Services ----- */
+    .sContentBox {
+        width: 236px;
+    }
+	
+	/* ----- Contact Us ----- */
+    .contentShow {
+		width: 980px;
+	}
+	
+	.showBox {
+		width: 440px;
+	}
+
+    /* ----- Footer ----- */
+    .footBox {
+        width: 316px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+	/* ----- Presets ----- */
+	p {
+		font-size: 12px;
+	}
+
+	/* ----- NavBar ----- */
+    .navText {
+        width: 750px;
+    }
+
+	h1 {
+		font-size: 24px;
+	}
+
+	li a {
+		font-size: 12px;
+	}
+
+	/* ----- Heading ----- */
+	h2 {
+		font-size: 38px;
+	}
+
+	/* ----- main ----- */
+	.heading {
+		width: 750px;
+	}
+
+	.heading h3 {
+		font-size: 48px;
+	}
+
+	.content {
+		width: 750px;
+	}
+
+	/* ----- About ----- */
+	.aContentBox {
+		width: 355px;
+	}
+
+	h5 {
+		font-size: 13px;
+	}
+
+	/* ----- Services ----- */
+    .sContentBox {
+		margin: 10px 25px;
+        width: 200px;
+    }
+
+	.sContentBox h4 {
+		font-size: 20px;
+	}
+	
+	/* ----- Contact Us ----- */
+	.contact {
+		height: 800px;
+	}
+	
+	.contentShow {
+		height: 400px;
+		width: 750px;
+	}
+	
+	.showBox {
+		margin: 10px;
+		height: 350px;
+		width: 350px;
+	}
+
+	/* ----- Footer ----- */
+    .footBox {
+		margin: 5px 20px;
+        width: 210px;
+    }
+
+	.footBox h4 {
+	    font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+    /* ----- NavBar ----- */
+    nav {
+        height: 80px;
+        width: 100%;
+    }
+
+    .deskNav {
+        display: none;
+    }
+
+    .navText {
+        margin-top: 20px;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .mobileNav {
+        display: block;
+        overflow: hidden;
+        padding-top: 20px;
+    }
+
+    .mobileNav h1 {
+        display: inline;
+        padding-left: 15px;
+    }
+
+    .mobileNav a {
+        color: #F2F2F2;
+        display: none;
+        float: left;
+        font-size: 17px;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .mobileNav a.icon {
+        border: none;
+        display: block;
+        float: right;
+        padding-top: 5px;
+    }
+
+    /* onClick */
+    .mobileNav.responsive {
+        background-color: #111;
+        position: relative;
+    }
+
+    .mobileNav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .mobileNav.responsive a {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+
+    .mobileNav.responsive a:hover {
+        background-color: #D01A1A;
+    }
+
+    .mobileNav.responsive h1 {
+        display: none;
+    }
+
+	/* ----- Heading ----- */
+	h2 {
+		font-size: 28px;
+	}
+
+    /* ----- main ----- */
+    .sec {
+        height: 1100px;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .heading p {
+        margin: auto;
+        width: 95%;
+    }
+
+    .content {
+        margin: auto;
+        width: 95%;
+    }
+
+    /* ----- About ----- */
+    .about .content {
+        height: 800px;
+    }
+
+    .aContentBox {
+        float: none;
+        height: 500px;
+        margin: 0;
+        width: 100%;
+    }
+
+    #aPic {
+        height: auto;
+    }
+
+    .aContentBox img {
+        max-width: 760px;
+    }
+
+    #text {
+        height: 280px;
+        margin-top: 15px;
+        padding-left: 3px;
+    }
+
+    /* ----- Services ----- */
+    #serv {
+        height: 1000px;
+    }
+
+    #serv .content {
+        height: 600px;
+    }
+
+    .sContentBox {
+        float: none;
+        height: 100px;
+        margin: 0px auto 0px;
+        width: 95%;
+    }
+
+    .sContentBox h4 {
+        margin: 0px 0px 10px;
+    }
+
+    /* ----- Contact Us ----- */
+    .contact {
+        height: 1400px;
+    }
+
+    .contentShow {
+        height: 1100px;
+        margin: auto;
+        width: 95%;
+    }
+
+    .showBox {
+        float: none;
+        height: 500px;
+        margin: 0px 0px 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .showBox img {
+        max-width: 500px;
+        height: auto;
+    }
+
+    .showBox iframe {
+        max-width: 500px;
+    }
+
+    /* ----- Footer ----- */
+    footer {
+        height: 500px;
+    }
+
+    footer .content {
+        margin: 60px auto 0px;
+        height: 400px;
+        width: 95%;
+    }
+
+    .footBox {
+        float: none;
+        height: 120px;
+        margin: 0px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* ----- Heading ----- */
+    header {
+        height: 600px;
+    }
+
+    /* ----- main ----- */
+    .sec {
+        height: 950px;
+    }
+
+    /* ----- About ----- */
+    .about .content {
+        height: auto;
+    }
+
+    #text {
+        height: auto;
+    }
+
+    /* ----- Services ----- */
+    #serv {
+        height: 950px;
+    }
+
+    /* ----- Contact Us ----- */
+    .contact {
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    .contentShow {
+        height: auto;
+    }
+
+    #shop {
+        height: auto;
+    }
+
+    #map {
+        height: 400px;
+    }
+
+    /* ----- Footer ----- */
+    footer {
+        height: 520px;
+    }
+
+    #tommy {
+        display: block;
+        margin-top: 5px;
+    }
+}

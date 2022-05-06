@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id = "n" style="position: fixed;">
+        <div class="deskNav">
+            <div class="navText">
+                <h1 class="logo">Helloz Car Maintainer</h1>
+                <ul>
+                    <li><a href="contact.html">Contact_Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="about.html">About_us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobileNav" id = "mNav"> 
+            <h1 class="logo">Hello Car Maintainer</h1>
+            <a href="index.html" onclick="myFunction()">Home</a>
+            <a href="about.html" onclick="myFunction()">About</a>
+            <a href="service.html" onclick="myFunction()">Services</a>
+            <a href="contact.html" onclick="myFunction()">Contact Us</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+    <header>
+        <div class="mySlides raceCar fade">
+            <div class="textAd">
+                <h2>Excellent Car Repair</h2>
+            </div>
+        </div>
+        <div class="mySlides engine fade">
+            <div class="textAd">
+                <h2>Superb Car Service</h2>
+            </div>
+        </div>
+        <div class="mySlides know fade">
+            <div class="textAd">
+                <h2>Expert Car Knowledge</h2>
+            </div>
+        </div>
+        <div class="mySlides guest fade">
+            <div class="textAd">
+                <h2>Great Guest Service</h2>
+            </div>
+        </div>
+    </header> <br><br><br>
+    <hr style="height:5px;border-width:0;color:gray;background-color:gray">
+<!--***************************** Contact Us *****************************-->
+<div id = "con" class="contact">
+    <div class="heading">
+        <h3 class="red">Contact_us</h3>
+        <p>
+            We're located in Defence phase 8 on  18th street. Feel free to stop by for any
+            questions or give us a call. Our phone number is: +928334188324. You can pay easily via credit, cash, cheaque and bank transfer.
+        </p>
+    </div>
+    <div class = "contentShow">
+        <div id = "shop" class = "showBox">
+            <img src = "data:image/jpeg;base64,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" alt = "front pic">
+        </div>
+        <div id = "map" class = "showBox">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.1514223323707!2d67.06773121456685!3d24.790267984087052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33cbe513b7c13%3A0xbca043038f79687f!2s18th%20St%2C%20DHA%20Karachi%20Phase%20VIII%20Zone%20A%20Zone%20A%20Phase%208%20Defence%20Housing%20Authority%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2075500%2C%20Pakistan!5e0!3m2!1sen!2s!4v1651747333403!5m2!1sen!2s" width="600" height="450" style="border: 3px;border-radius: 5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade ">
+            </iframe>
+        </div>
+    </div>
+    <br><br>
+<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+</div>
+</main>
+
+<!--***************************** Footer *****************************-->
+<footer style="margin-top: -80px;">
+<div class="content">
+    <div class="footBox">
+        <h4 class="logo">Hello Car Maintainer</h4>
+        <p>
+            Friendly, honest, and reliable auto shop in DHA phase 8.
+        </p>
+    </div>
+    <div class="footBox">
+        <h4>News and Updates</h4>
+        <p>Coming soon.</p>
+    </div>
+    <div class="footBox">
+        <h4>Contact Us</h4>
+        <p>Address: DHA Karachi Phase VIII Zone A Zone A Phase 8 Defence Housing Authority, Karachi, 75500</p>
+        <p>Phone: +928334188324</p>
+    </div>
+</div>
+<p id="copyright">
+    Copyright © 2022 Hello Car Maintainer.
+    
+</p>
+</footer>
+</body>
+<script src="style.js"></script>
+</html>
